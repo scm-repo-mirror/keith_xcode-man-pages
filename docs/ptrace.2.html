@@ -135,8 +135,8 @@
       <code class="Dv">PT_ATTACH</code>) in that signals from the child are
       delivered to the parent as Mach exceptions (see EXC_SOFT_SIGNAL).</dd>
   <dt id="PT_DETACH"><a class="permalink" href="#PT_DETACH"><code class="Dv">PT_DETACH</code></a></dt>
-  <dd>This request is like PT_CONTINUE, except that it does not allow specifying
-      an alternate place to continue execution, and after it succeeds, the
+  <dd>This request is like PT_CONTINUE, except that <var class="Fa">addr</var>
+      and <var class="Fa">data</var> are ignored, and after it succeeds, the
       traced process is no longer traced and continues execution normally.</dd>
 </dl>
 </section>
